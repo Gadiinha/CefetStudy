@@ -1,0 +1,19 @@
+form {
+  display: inline-block;
+  width: 45%;
+  text-align: left;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

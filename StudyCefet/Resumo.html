@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= utf-8>
+  		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+<body>
+	<header style="background-color: #1d69a4;">
+		<nav>
+			<ul class="left" style="position: sticky">
+			  <li><a href="/index.html" ><img src="./images/logo.png"height="58"></a></li>
+			  <li><a href="Estudo.html">Estudo</a></li>
+			  <li><a href="Organizacao.html">Organização</a></li>
+			  <li><a href="Sobre_nos.html" >Sobre nós</a></li>
+			  <li><a href="Resumo.html" >Resumos</a></li>
+			</ul>
+			<ul class="right">
+			  <li><a href="indexDark.html"><img src="./images/dark_mode.png" alt="Dark Mode" height="40"></a></li>
+			  <li><a href="Login.html"><img src="./images/login.png" alt="Login" height="40"></a></li>
+			</ul>
+		  </nav>
+		</header>
+<main>
+    
+    	<h2>Adicione um resumo:</h2>
+    	
+			<input type="file" name="caderno-foto"  accept="image/*">
+			<button type="submit">Enviar</button>
+    	<!--<form action="#" method="post" ></form> -->
+  	
+    	<h1>Resumo enviados:</h1>
+    
+	<section class="post">
+		<div class="user-profile">
+            <img src="./images/caderno_1.png" alt="Foto de perfil">
+            <h1>User Teste</h1>
+        </div>
+		<img src="./images/portugues.png" alt="Post 1">
+		<p class="subtitle"> Disciplina de Português</p>
+	</section>
+	
+	<section  class="post">
+
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="./images/ciencias_da_natureza.png" style="width:80%">
+		  <div class="text">Caption Text</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="./images/ciencias_da_humanas.png" style="width:60%">
+		  <div class="text">Caption Two</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="./images/romantismo3.jpg" style="width:40%">
+		  <div class="text">Caption Three</div>
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+		
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+		
+		<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+		
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+		
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+	</section>
+    </main>
+  </body>
+</html>

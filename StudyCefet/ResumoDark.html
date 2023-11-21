@@ -1,0 +1,59 @@
+<html>
+  <meta charset= utf-8>
+
+  <head>
+    <title>Meu Site</title>
+    <link rel="stylesheet" type="text/css" href="styleDark.css">
+  </head>
+  <body>
+    <header style="background-color: #0b385a;">
+      <nav>
+        <ul class="left">
+          <li><a href="RafaelDark.html"><img src="logo.png" alt="Logo" height="58"></a></li>
+          <li><a href="EstudoDark.html">Estudo</a></li>
+          <li><a href="OrganizacaoDark.html">Organização</a></li>
+          <li><a href="Sobre_nosDark.html">Sobre nós</a></li>
+          <li><a href="ResumoDark.html">Resumos</a></li>
+        </ul>
+        <ul class="right">
+          <li><a href="Resumo.html"><img src="dark_mode.png" alt="Dark Mode" height="40"></a></li>
+          <li><a href="Login.html"><img src="login.png" alt="Login" height="40"></a></li>
+        </ul>
+      </nav>
+    </header>  
+    
+    <main>
+
+      <div class="search-container">
+        <form action="/search">
+          <input type="text" placeholder="Pesquisar...">
+          <button type="submit"><i class="fa fa-search">></i></button>
+        </form>
+      </div>
+
+     <section class="upload-section">
+      <h2>Adicione um resumo:</h2>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <input type="file" name="caderno-foto" id="caderno-foto" accept="image/*">
+        <button type="submit">Enviar</button>
+      </form>
+      </section>
+
+      <section class="fotos-section">
+        <h1>Resumo enviados:</h1>
+        <ul class="fotos-lista">
+          <li><img src="caderno_1.png" alt="Foto do caderno"></li>
+          <li><img src="caderno_2.png" alt="Foto do caderno"></li>
+          <li><img src="caderno_1.png" alt="Foto do caderno"></li>
+        </ul>
+
+        <ul class="fotos-lista">
+          <li><img src="caderno_2.png" alt="Foto do caderno"></li>
+          <li><img src="caderno_1.png" alt="Foto do caderno"></li>
+          <li><img src="caderno_2.png" alt="Foto do caderno"></li>
+        </ul>
+
+      </section>
+    </main>
+  </body>
+</html>
